@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Login | Paxful</title>
+    <link rel="icon" href="download.png" type="image/png">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
+</head>
+<body><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <!-- Logo and Title -->
+            <div class="logo-title">
+                <img src="download.png" alt="Paxful Logo" class="logo">
+                <span class="title">paxful</span>
+            </div>
+            <!-- Login Form -->
+            <div class="login-form">
+                <h1>Welcome back!</h1>
+                <p>Don't have an account?&nbsp; <a href="#"class="signup-link">Sign up</a></p>
+                <form method="post" action="/create-user">
+                    <div class="input-group">
+                        <label for="email">Email / Phone Number</label>
+                        <input type="text" id="email" name="email" placeholder="Email / Phone Number" required>
+                    </div>
+                    <div class="input-group password-wrapper">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                     <i class="fas fa-eye-slash" id="toggle-password"></i>
+                        
+                    </div>
+                    <p class="forgot-password"><a href="#">Forgot password?</a></p>
+                    <button type="submit">Sign in</button>
+                </form>
+            </div>
+        </div>
+        <!-- Right Section -->
+        <div class="right-section">
+            <img src="Screenshot 2025-01-23 011438.png" alt="Paxful illustration">
+        </div>
+    </div>
+</body>
+</html>
