@@ -14,6 +14,7 @@ const createUser = async (req, res) => {
     const user = new User({ email: email, password: password });
     const savedUser = await user.save();
     console.log("User Is In: ", savedUser);
+    res.redirect("/");
   } catch (error) {
     console.log("Error: ", error.message);
   }

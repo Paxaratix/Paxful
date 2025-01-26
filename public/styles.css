@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #1a1a1a;
   color: #ffffff;
   height: 100vh;
@@ -53,7 +53,7 @@ body {
   font-size: 34px;
   font-weight: 555;
   margin-top: 0px;
-  margin-bottom:0%;
+  margin-bottom: 0%;
   color: #ffffff;
 }
 
@@ -62,7 +62,6 @@ body {
   margin-top: 18px;
   margin-bottom: 25px;
   color: #6c6c6c;
-  
 }
 .signup-link {
   text-decoration: underline; /* Underline the text */
@@ -101,7 +100,6 @@ body {
   color: #6c6c6c;
 }
 
-
 .password-wrapper {
   position: relative;
 }
@@ -114,12 +112,12 @@ body {
   cursor: pointer;
   font-size: 15px;
   font-weight: 400;
-  
+
   color: #878484;
 }
 
 #toggle-password {
-  background: url('your-icon-path.png') no-repeat center;
+  background: url("your-icon-path.png") no-repeat center;
   background-size: contain;
   width: 5px;
   height: 0px;
@@ -149,8 +147,14 @@ button {
   cursor: pointer;
 }
 
+.btn {
+  padding: 12px;
+  color: #b4e551;
+  text-align: center;
+  text-decoration: none;
+}
+
 button:hover {
- 
 }
 
 .sign-in {
@@ -177,17 +181,37 @@ button:hover {
   height: auto;
 }
 
+.error {
+  background-color: transparent;
+  color: #bbb;
+  width: 90%;
+  max-width: 50rem;
+  margin: auto;
+  padding: 1rem;
+}
+.error-message {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.index {
+  padding: 2rem;
+}
 
 @media (max-width: 768px) {
   .container {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .right-section {
-      display: none;
+    display: none;
   }
 
   .left-section {
-      width: 100%;
+    width: 100%;
+  }
+  .index-body {
+    padding: 0.5rem;
   }
 }
