@@ -197,6 +197,7 @@ button:hover {
 
 .index {
   padding: 2rem;
+  font-family: "Inter", sans-serif;
 }
 
 @media (max-width: 768px) {
