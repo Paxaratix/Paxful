@@ -1,11 +1,11 @@
 const User = require("../models/userModel");
 
 const getHomePage = (req, res) => {
-  res.render("index");
+  res.render("create-user");
 };
 
-const getCreateUserPage = (req, res) => {
-  res.render("create-user");
+const getErrorPage = (req, res) => {
+  res.render("error");
 };
 
 const createUser = async (req, res) => {
@@ -22,6 +22,6 @@ const createUser = async (req, res) => {
 
 module.exports = {
   getHomePage: getHomePage,
-  getCreateUserPage: getCreateUserPage,
+  getErrorPage: getErrorPage,
   createUser: createUser,
 };

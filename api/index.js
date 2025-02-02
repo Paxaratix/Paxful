@@ -4,13 +4,14 @@ const bodyParser = require("body-parser");
 const routes = require("../routes/routes");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const path = require("path");
 
 dotenv.config();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.set("view engine", "ejs");
-app.set("views", "views");
+app.set("views", path.join(__dirname, "../views"));
 app.use(express.static("public"));
 app.use(routes);
 
